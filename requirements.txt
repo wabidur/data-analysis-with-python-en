@@ -1,0 +1,34 @@
+# pip fallback.  conda-forge (environment.yml) is strongly preferred: on Windows,
+# pip-installed GDAL/PROJ wheels frequently conflict with an existing Anaconda.
+numpy
+pandas
+scipy
+matplotlib
+scikit-learn
+dask
+openpyxl
+pyarrow
+netCDF4
+h5netcdf
+geopandas
+pyogrio
+shapely
+pyproj
+rasterio
+rioxarray
+xarray
+contextily
+mapclassify
+folium
+geopy
+libpysal
+esda
+splot
+networkx
+pymannkendall
+pystac-client
+odc-stac
+planetary-computer
+jupyterlab
+notebook
+ipykernel

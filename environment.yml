@@ -1,0 +1,55 @@
+# Conda environment for the course.
+#   conda env create -f environment.yml
+#   conda activate geo
+#   jupyter lab          <-- always launch Jupyter from inside this environment
+name: geo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+
+  # core
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - dask
+
+  # file formats
+  - openpyxl          # .xlsx
+  - pyarrow           # GeoParquet
+  - netcdf4
+  - h5netcdf
+
+  # geospatial stack -- all from conda-forge so GDAL/GEOS/PROJ match
+  - geopandas
+  - pyogrio
+  - shapely
+  - pyproj
+  - rasterio
+  - rioxarray
+  - xarray
+  - contextily
+  - mapclassify
+  - folium
+  - geopy
+
+  # spatial statistics
+  - libpysal
+  - esda
+  - splot
+  - networkx
+
+  # notebook
+  - jupyterlab
+  - notebook
+  - ipykernel
+
+  # pure-python extras, not on conda-forge in matching versions
+  - pip
+  - pip:
+      - pymannkendall
+      - pystac-client
+      - odc-stac
+      - planetary-computer
